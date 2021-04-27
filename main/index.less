@@ -1,6 +1,7 @@
 // 主应用慎用 reset 样式
 body {
   margin: 0;
+  padding: 0
 }
 
 .mainapp {
@@ -9,41 +10,26 @@ body {
   line-height: 1;
 }
 
-.mainapp-header {
-  >h1 {
-    color: #333;
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0;
-    padding: 36px;
-  }
-}
 
 .mainapp-main {
-  display: flex;
+  .mainapp-menu {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #444;
+    font-size: 18px;
 
-  .mainapp-sidemenu {
-    width: 130px;
-    list-style: none;
-    margin: 0;
-    margin-left: 40px;
-    padding: 0;
-    border-right: 2px solid #aaa;
-
-    >li {
-      color: #aaa;
-      margin: 20px 0;
-      font-size: 18px;
-      font-weight: 400;
+    div {
+      width: 130px;
+      text-align: center;
       cursor: pointer;
-
       &:hover {
-        color: #444;
+        color: red;
       }
-
-      &:first-child {
-        margin-top: 5px;
-      }
+    }
+    .active {
+      background-color: aquamarine;
     }
   }
 }
