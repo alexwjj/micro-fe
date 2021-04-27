@@ -24,11 +24,11 @@ if (!window.__POWERED_BY_QIANKUN__) {
 }
 
 export async function bootstrap() {
-  console.log('[react16] react app bootstraped');
+  console.log('[react] react app bootstraped');
 }
 
 export async function mount(props) {
-  console.log('[react16] props from main framework', props);
+  console.log('[react] props from main framework', props);
   storeTest(props);
   render(props);
 }

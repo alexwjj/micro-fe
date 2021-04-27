@@ -47,11 +47,11 @@ registerMicroApps(
       activeRule: '/vue3',
     },
     {
-      name: 'react16',
+      name: 'react',
       entry: '//localhost:7100',
       container: '#subapp-viewport',
       loader,
-      activeRule: '/react16',
+      activeRule: '/react',
     },
   ], {
     beforeLoad: [
